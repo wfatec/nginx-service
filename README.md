@@ -11,5 +11,5 @@ docker build -t wfatec/nginx-service:1.0 .
 ### 启动 docker 容器
 
 ```
-docker run --name myservice -it -v dist/:/usr/share/nginx/html/ -p 8080:80 -d wfatec/nginx-service
+docker run --name myservice -it -v /your/local/path/:/usr/share/nginx/html/ -p 8080:80 -d wfatec/nginx-service:1.0
 ```
